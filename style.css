@@ -1,0 +1,88 @@
+header{
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 3px;
+}
+aside{
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+}
+aside a{
+    padding-top: 10%;                                     
+}
+.A1{
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 3px;
+}
+.A2{
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 3px;
+}
+.A3{
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 3px;
+}
+footer{
+    border: 2px solid black;
+    border-radius: 3px;
+}
+@media only screen and (max-width:640px) 
+{
+    body{
+        text-align: center;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+@media only screen and (min-width:641px) and (max-width:1007px) 
+{
+    body{
+        text-align: center;
+        margin: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    header{
+        grid-column-start: 5;
+        grid-column-end: 1;
+    }
+    footer{
+        grid-column-start: 5;
+        grid-column-end: 1;
+    }
+    main{
+        grid-column-start: 5;
+        grid-column-end: 3;
+    }
+}
+@media only screen and (min-width:1008px) 
+{
+    body{
+        text-align: center;
+        margin: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    header{
+        grid-column-start: 5;
+        grid-column-end: 1;
+    }
+    footer{
+        grid-column-start: 5;
+        grid-column-end: 1;
+    }
+    main{
+        grid-column-start: 5;
+        grid-column-end: 2; 
+        display: flex;
+        flex-direction: row;
+    }
+}   
